@@ -1,14 +1,18 @@
 h1 {
-  color: darkgreen;
+	color: darkgreen;
 }
 
 h2 {
-  color: #1450AA;
+	color: #1450aa;
 }
 main {
-  background: #fefefe;
+	background: #fefefe;
 }
 
 section {
-  background: lightgray;
+	background: lightgray;
+}
+
+.czerwony {
+	color: red;
 }
