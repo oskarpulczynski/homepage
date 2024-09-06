@@ -18,6 +18,7 @@ html {
 	color: rgb(52, 173, 161);
 }
 
+
 .article__text {
 	margin: 16px 0px;
 	font-size: 18px;
@@ -88,6 +89,10 @@ font-size: 18px;
 	font-size: 48px;
 	color: teal;
 	margin: 0 8px;
+}
+
+.page-header__text {
+	font-size: 18px;
 }
 
 .wrapper {
