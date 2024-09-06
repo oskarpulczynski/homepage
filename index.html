@@ -10,11 +10,11 @@
 </head>
 
 <body>
-  <header>
-    <nav>
-      <a href="/index.html">Strona główna</a>
-      <a href="/nauka-html.html">Nauka HTML</a>
-      <a href="/grzyby.html">Grzyby</a>
+  <header class="header">
+    <nav class="header__navigation">
+      <a class="header__navigation--link" href="/index.html">Strona główna</a>
+      <a class="header__navigation--link" href="/nauka-html.html">Nauka HTML</a>
+      <a class="header__navigation--link" href="/grzyby.html">Grzyby</a>
     </nav>
   </header>
 
@@ -24,13 +24,13 @@
         Oskar Pułczyński - Strona domowa
       </h1>
     </header>
-    <section>
-      <h2>
+    <section class="hero">
+      <h2 class="hero__heading">
         Lorem, ipsum dolor.
       </h2>
-      <img src="/grzyb.jpg" alt="zdjęcia grzyba">
-      <p class="red">
-        Lorem ipsum, dolor sit amet consectetur <a href="#szkolenie"> adipisicing </a> elit.
+      <img class="hero__img" src="/grzyb.jpg" alt="zdjęcia grzyba">
+      <p class="hero__text">
+        Lorem ipsum, dolor sit amet consectetur <a class="hero__text--link" href="#szkolenie"> adipisicing </a> elit.
         Numquam sunt, alias earum optio soluta veritatis
         architecto pariatur, culpa porro eaque aperiam aut blanditiis rerum velit totam esse. Ipsam similique laborum
         <br>
@@ -38,15 +38,15 @@
         quaerat, numquam tempore eveniet minima cumque.
       </p>
     </section>
-    <section>
-      <h2 class="red">
+    <section class="my-articles">
+      <h2 class="my-articles__heading">
         Lorem ipsum dolor sit.
       </h2>
-      <article class="/my-article">
-        <h3>
+      <article class="article">
+        <h3 class="article__heading">
           Lorem ipsum dolor sit amet.
         </h3>
-        <p>
+        <p class="article__text">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ab molestiae voluptatum eius dicta eligendi
           alias. Eius, qui quae quos doloribus fugit atque alias repellendus iure rem similique corrupti repudiandae
           dolorum
@@ -54,9 +54,9 @@
           corporis
         </p>
       </article>
-      <article id="szkolenie" class="my-article">
-        <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-        <p>
+      <article id="szkolenie" class="article">
+        <h3 class="article__heading">Lorem ipsum dolor sit amet consectetur.</h3>
+        <p class="article__text">
           nam mollitia nisi fuga magni dicta, totam dolorem illo natus consequuntur suscipit numquam? Facere voluptatem,
           id
           nisi, possimus sequi obcaecati vel veritatis tempore laudantium magnam modi, quisquam nam ab et soluta eveniet
@@ -67,8 +67,8 @@
     </section>
   </main>
 
-  <footer>
-    <p>
+  <footer class="footer">
+    <p class="footer__text">
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus inventore sapiente quo recusandae incidunt
       quisquam quas a numquam perspiciatis deserunt. <a href="#top">🔝</a>
     </p>
