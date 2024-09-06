@@ -22,6 +22,7 @@ html {
 .article__text {
 	margin: 16px 0px;
 	font-size: 18px;
+	line-height: 1.5;
 }
 
 .footer {
@@ -34,6 +35,16 @@ html {
 	text-align: center;
 	color: antiquewhite;
 	font-size: 14px;
+}
+
+.footer__top-link {
+	position: fixed;
+	bottom: 16px;
+	right: 16px;
+	padding: 16px;
+	background-color: lightblue;
+	border-radius: 50%;
+	border: 2px solid royalblue;
 }
 
 .header {
@@ -68,12 +79,14 @@ width: 100%;
 .hero__img {
 	display: block;
 	border-radius: 8px;
-	max-width: 720px;
+	width: 720px;
+	max-width: 100%;
 	margin: 0 auto; 
 	}
 
 .hero__text {
 font-size: 18px;
+line-height: 1.5;
 }
 
 .my-articles {
@@ -93,6 +106,7 @@ font-size: 18px;
 
 .page-header__text {
 	font-size: 18px;
+	line-height: 1.5;
 }
 
 .wrapper {
