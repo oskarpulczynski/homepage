@@ -1,5 +1,6 @@
 html {
 	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 *,
@@ -8,25 +9,90 @@ html {
 	box-sizing: inherit;
 }
 
-h1 {
-	color: darkgreen;
+.article {
+	margin: 16px 8px;
 }
 
-h2 {
-	color: #1450aa;
-}
-main {
-	background: #fefefe;
+.article__heading {
+	font-size: 24px;
+	color: rgb(52, 173, 161);
 }
 
-section {
-	background: lightgray;
+.article__text {
+	margin: 16px 0px;
+	font-size: 18px;
 }
 
-.red {
-	color: red;
+.footer {
+	padding: 16px;
+	background: navy;
 }
 
-.my-article {
-	color: hotpink;
+.footer__text {
+	margin: 0 auto;
+	text-align: center;
+	color: antiquewhite;
+	font-size: 14px;
+}
+
+.header {
+background: royalblue;
+padding: 16px;
+width: 100%;
+}
+
+.header__navigation {
+	margin: 16px auto;
+	max-width: 1080px;
+	text-align: center;
+}
+
+.header__navigation--link {
+	margin: 0 8px;
+	font-size: 20px;
+	color: antiquewhite;
+	text-decoration: none;
+}
+
+.hero {
+	width: 100%;
+	margin: 0 16px;
+}
+
+.hero__heading {
+	font-size: 32px;
+	color: darkcyan;
+}
+
+.hero__img {
+	display: block;
+	border-radius: 8px;
+	max-width: 720px;
+	margin: 0 auto; 
+	}
+
+.hero__text {
+font-size: 18px;
+}
+
+.my-articles {
+	margin: 16px 8px;
+}
+
+.my-articles__heading {
+	font-size: 32px;
+	color: rgb(52, 173, 161);
+}
+
+.page-header__heading {
+	font-size: 48px;
+	color: teal;
+	margin: 0 8px;
+}
+
+.wrapper {
+	margin: 0px auto;
+	padding: 16px;
+	width: 1080px;
+	background: rgb(178, 213, 248);
 }
