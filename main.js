@@ -57,6 +57,15 @@ console.log(
 deathStar.fire("Ziemia");
 
 const greet = (firstName2, age2) => {
-  const result2 = `Witaj ${firstName2}! Masz ${age2} lat`
-return result2
-}
+	const result2 = `Witaj ${firstName2}! Masz ${age2} lat`;
+	return result2;
+};
+
+const button = document.querySelector(".hero__button--js");
+
+const clickFunction = e => {
+	const header2 = document.querySelector(".hero__heading--js");
+	header2.innerHTML = "klik, klik!";
+};
+
+button.addEventListener("click", clickFunction);

@@ -11,12 +11,13 @@
 
 <body>
   <header class="header">
-    <nav class="header__navigation">
+    <nav class="header__navigation header__navigation--js">
       <a class="header__navigation--link" href="/index.html">Strona główna</a>
       <a class="header__navigation--link" href="/nauka-html.html">Nauka HTML</a>
       <a class="header__navigation--link" href="/grzyby.html">Grzyby</a>
       <a class="header__navigation--link" href="/flexbox.html">Flexbox</a>
     </nav>
+    <button class="hamburger hamburger--js" aria-label="Menu">🍔</button>
   </header>
 
   <main class="wrapper">
@@ -27,9 +28,10 @@
       <p class="page-header__text page-header__text--js"></p>
     </header>
     <section class="hero">
-      <h2 class="hero__heading">
+      <h2 class="hero__heading hero__heading--js">
         Lorem, ipsum dolor.
       </h2>
+      <button class="hero__button hero__button--js">Zmień tekst nagłówka</button>
       <img class="hero__img" src="/grzyb.jpg" alt="zdjęcia grzyba">
       <p class="hero__text">
         Lorem ipsum, dolor sit amet consectetur <a class="hero__text--link" href="#szkolenie"> adipisicing </a> elit.
@@ -91,60 +93,62 @@
         <h3 class="article__heading">Lorem, ipsum dolor.</h3>
         <dl>
           <dt>Lorem ipsum dolor sit amet.</dt>
-          <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, illum deleniti eaque vero sint neque dignissimos repellendus dolor dolorem voluptatem cum voluptates dolores ullam. Unde voluptates minus eum voluptatem veniam!</dd>
+          <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, illum deleniti eaque vero sint neque
+            dignissimos repellendus dolor dolorem voluptatem cum voluptates dolores ullam. Unde voluptates minus eum
+            voluptatem veniam!</dd>
         </dl>
       </article>
-    </article>
-    <article class="article">
-      <h3 class="article__heading">Tabela.</h3>
-      <table class="table">
-<caption class="table__caption">Plan lekcji</caption>
-<thead>
-  <tr>
-    <th>L.p.</th>
-    <th>Poniedziałek</th>
-    <th>Wtorek</th>
-    <th>Środa</th>
-    <th>Czwartek</th>
-    <th>Piątek</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>1</td>
-    <td>Matematyka</td>
-    <td>-</td>
-    <td>WF</td>
-    <td>-</td>
-    <td>Basen</td>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>Matematyka</td>
-    <td>-</td>
-    <td>WF</td>
-    <td>-</td>
-    <td>Basen</td>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>Matematyka</td>
-    <td>-</td>
-    <td>WF</td>
-    <td>-</td>
-    <td>Basen</td>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>Matematyka</td>
-    <td>-</td>
-    <td>WF</td>
-    <td>-</td>
-    <td>Basen</td>
-  </tr>
-</tbody>
-      </table>
-    </article>
+      </article>
+      <article class="article">
+        <h3 class="article__heading">Tabela.</h3>
+        <table class="table">
+          <caption class="table__caption">Plan lekcji</caption>
+          <thead>
+            <tr>
+              <th>L.p.</th>
+              <th>Poniedziałek</th>
+              <th>Wtorek</th>
+              <th>Środa</th>
+              <th>Czwartek</th>
+              <th>Piątek</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Matematyka</td>
+              <td>-</td>
+              <td>WF</td>
+              <td>-</td>
+              <td>Basen</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Matematyka</td>
+              <td>-</td>
+              <td>WF</td>
+              <td>-</td>
+              <td>Basen</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Matematyka</td>
+              <td>-</td>
+              <td>WF</td>
+              <td>-</td>
+              <td>Basen</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Matematyka</td>
+              <td>-</td>
+              <td>WF</td>
+              <td>-</td>
+              <td>Basen</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
     </section>
   </main>
 
@@ -155,6 +159,7 @@
     </p>
   </footer>
   <script defer src="/main.js"></script>
+  <script defer src="/hamburger.js"></script>
 </body>
 
 </html>
