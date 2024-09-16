@@ -230,6 +230,11 @@ html {
 	.page-header__text {
 		font-size: 1.125rem;
 	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr ;
+	}
 	.my-articles__heading {
 		font-size: 2.25rem;
 	}
