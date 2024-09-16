@@ -14,7 +14,7 @@ html {
 }
 
 .article__heading {
-	font-size: 24px;
+	font-size: 1.1rem;
 	color: rgb(52, 173, 161);
 }
 
@@ -24,7 +24,7 @@ html {
 
 .article__text {
 	margin: 16px 0px;
-	font-size: 18px;
+	font-size: 1rem;
 	line-height: 1.5;
 }
 
@@ -51,7 +51,7 @@ html {
 }
 
 .hamburger {
-	padding: 4px;
+	padding: 4px 16px;
 	background: none;
 	border: 0;
 	font-size: 2rem;
@@ -91,7 +91,7 @@ html {
 
 .hero {
 	width: 100%;
-	margin: 0 16px;
+	/* margin: 0 16px; */
 }
 
 .hero__button {
@@ -105,7 +105,7 @@ html {
 }
 
 .hero__heading {
-	font-size: 32px;
+	font-size: 1.25rem;
 	color: darkcyan;
 }
 
@@ -118,7 +118,7 @@ html {
 }
 
 .hero__text {
-	font-size: 18px;
+	font-size: 1rem;
 	line-height: 1.5;
 }
 
@@ -127,31 +127,19 @@ html {
 }
 
 .my-articles__heading {
-	font-size: 32px;
+	font-size: 1.25rem;
 	color: rgb(52, 173, 161);
 }
 
 .page-header__heading {
-	font-size: 48px;
+	font-size: 1.5rem;
 	color: teal;
 	margin: 0 8px;
 }
 
 .page-header__text {
-	font-size: 18px;
+	font-size: 1rem;
 	line-height: 1.5;
-}
-
-.table {
-	width: 100%;
-	text-align: center;
-	background: lightcyan;
-	padding: 16px;
-}
-
-.table__caption {
-	margin-bottom: 1.5rem;
-	font-size: 32px;
 }
 
 .wrapper {
@@ -163,11 +151,14 @@ html {
 }
 
 @media screen and (min-width: 768px) {
+	.article__heading {
+		font-size: 1.5rem;
+	}
+	.article__text {
+		font-size: 1.125rem;
+	}
 	.hamburger {
 		display: none;
-	}
-
-	.header {
 	}
 
 	.header__navigation {
@@ -184,5 +175,62 @@ html {
 		font-size: 20px;
 		color: antiquewhite;
 		text-decoration: none;
+	}
+	.hero__heading {
+		font-size: 1.75rem;
+	}
+	.hero__text {
+		font-size: 1.125rem;
+	}
+	.page-header__heading {
+		font-size: 2rem;
+	}
+	.page-header__text {
+		font-size: 1.125rem;
+	}
+	.my-articles__heading {
+		font-size: 1.75rem;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.article__heading {
+		font-size: 2rem;
+	}
+	.article__text {
+		font-size: 1.125rem;
+	}
+	.hamburger {
+		display: none;
+	}
+	.header__navigation {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		position: static;
+	}
+
+	.header__navigation--link {
+		margin: 0 8px;
+		font-size: 20px;
+		color: antiquewhite;
+		text-decoration: none;
+	}
+	.hero__heading {
+		font-size: 2.25rem;
+	}
+	.hero__text {
+		font-size: 1.125rem;
+	}
+	.page-header__heading {
+		font-size: 3rem;
+	}
+	.page-header__text {
+		font-size: 1.125rem;
+	}
+	.my-articles__heading {
+		font-size: 2.25rem;
 	}
 }
