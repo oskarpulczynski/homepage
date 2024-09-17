@@ -1,18 +1,23 @@
 @import "components/article.scss";
 @import url(../../node_modules/normalize.css/normalize.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 $textcolor: hotpink;
 $desktop: 1280px;
 $tablet: 768px;
 
 :root {
-	--textColor: white;
-	--backgroundColor: navy;
+	--textColor: #020202;
+	--backgroundColor: #e1e1e1;
 	background: var(--backgroundColor);
+	@media (prefers-color-scheme: dark) {
+		--textColor: #e1e1e1;
+		--backgroundColor: #020202;
+	}
 }
 
 html {
 	box-sizing: border-box;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 
 *,

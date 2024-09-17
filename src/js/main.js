@@ -1,5 +1,6 @@
 import { calculate } from "./calculate";
 import { differenceInDays } from "date-fns";
+import { substract} from "./substract";
 
 const firstName = "Oskar";
 const age = 26;
@@ -75,3 +76,5 @@ console.log(resultDays);
 
 const wiek = resultDays/365;
 console.log(wiek)
+
+substract(1,2)
