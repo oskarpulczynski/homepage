@@ -4,6 +4,12 @@ $textcolor: hotpink;
 $desktop: 1280px;
 $tablet: 768px;
 
+:root {
+	--textColor: white;
+	--backgroundColor: navy;
+	background: var(--backgroundColor);
+}
+
 html {
 	box-sizing: border-box;
 	font-family: Arial, Helvetica, sans-serif;

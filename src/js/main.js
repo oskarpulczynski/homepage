@@ -61,8 +61,7 @@ const greet = (firstName2, age2) => {
 const button = document.querySelector(".hero__button--js");
 
 const clickFunction = e => {
-	const header2 = document.querySelector(".hero__heading--js");
-	header2.innerHTML = "klik, klik!";
+document.documentElement.style.setProperty('--backgroundColor', 'tomato')
 };
 
 button.addEventListener("click", clickFunction);
