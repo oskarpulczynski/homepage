@@ -1,3 +1,6 @@
+import { calculate } from "./calculate";
+import { differenceInDays } from "date-fns";
+
 const firstName = "Oskar";
 const age = 26;
 
@@ -14,12 +17,6 @@ console.log(header.innerHTML);
 const hiddenText = document.querySelector(".page-header__text--js");
 
 hiddenText.innerHTML = "Ten tekst widzisz tylko dzięki JS ;)";
-
-function calculate(myNumber) {
-	myNumber = myNumber + 3;
-	console.log(myNumber);
-	return myNumber * 7;
-}
 
 calculate(1);
 
@@ -69,3 +66,13 @@ const clickFunction = e => {
 };
 
 button.addEventListener("click", clickFunction);
+
+const resultDays = differenceInDays(
+  new Date(),
+  new Date(1998, 6, 5, 0, 0)
+);
+
+console.log(resultDays);
+
+const wiek = resultDays/365;
+console.log(wiek)

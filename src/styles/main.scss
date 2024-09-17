@@ -1,3 +1,5 @@
+@import "components/article.scss";
+@import url(../../node_modules/normalize.css/normalize.css);
 $textcolor: hotpink;
 $desktop: 1280px;
 $tablet: 768px;
@@ -12,21 +14,9 @@ html {
 *::after {
 	box-sizing: inherit;
 }
-
-.article {
-	margin: 16px 8px;
-	&__heading {
-		font-size: 1.1rem;
-		color: rgb(52, 173, 161);
-	}
-	&__list {
-		list-style-type: circle;
-	}
-	&__text {
-		margin: 16px 0px;
-		font-size: 1rem;
-		line-height: 1.5;
-		color: $textcolor;
+body {
+	@media screen and (min-width: $tablet) {
+		font-size: 1.125rem;
 	}
 }
 
@@ -52,11 +42,20 @@ html {
 	}
 }
 
+.grid {
+	@media screen and (min-width: $desktop) {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+}
 .hamburger {
 	padding: 4px 16px;
 	background: none;
 	border: 0;
 	font-size: 2rem;
+	@media screen and (min-width: $tablet) {
+		display: none;
+	}
 }
 
 .header {
@@ -77,6 +76,15 @@ html {
 		top: 50px;
 		gap: 24px;
 		background: violet;
+
+		@media screen and (min-width: $tablet) {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			position: static;
+		}
 
 		&--open {
 			display: flex;
@@ -105,6 +113,12 @@ html {
 	&__heading {
 		font-size: 1.25rem;
 		color: darkcyan;
+		@media screen and (min-width: $tablet) {
+			font-size: 1.75rem;
+		}
+		@media screen and (min-width: $desktop) {
+			font-size: 2.25rem;
+		}
 	}
 	&__img {
 		display: block;
@@ -124,6 +138,13 @@ html {
 	&__heading {
 		font-size: 1.25rem;
 		color: rgb(52, 173, 161);
+
+		@media screen and (min-width: $tablet) {
+			font-size: 1.75rem;
+		}
+		@media screen and (min-width: $desktop) {
+			font-size: 2.25rem;
+		}
 	}
 }
 
@@ -132,6 +153,13 @@ html {
 		font-size: 1.5rem;
 		color: teal;
 		margin: 0 8px;
+
+		@media screen and (min-width: $tablet) {
+			font-size: 2rem;
+		}
+		@media screen and (min-width: $desktop) {
+			font-size: 3rem;
+		}
 	}
 	&__text {
 		font-size: 1rem;
@@ -145,94 +173,4 @@ html {
 	width: 100%;
 	max-width: 1080px;
 	background: rgb(178, 213, 248);
-}
-
-@media screen and (min-width: 768px) {
-	.article__heading {
-		font-size: 1.5rem;
-	}
-	.article__text {
-		font-size: 1.125rem;
-	}
-	.hamburger {
-		display: none;
-	}
-
-	.header__navigation {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-		position: static;
-	}
-
-	.header__navigation--link {
-		margin: 0 8px;
-		font-size: 20px;
-		color: antiquewhite;
-		text-decoration: none;
-	}
-	.hero__heading {
-		font-size: 1.75rem;
-	}
-	.hero__text {
-		font-size: 1.125rem;
-	}
-	.page-header__heading {
-		font-size: 2rem;
-	}
-	.page-header__text {
-		font-size: 1.125rem;
-	}
-	.my-articles__heading {
-		font-size: 1.75rem;
-	}
-}
-
-@media screen and (min-width: 1280px) {
-	.article__heading {
-		font-size: 2rem;
-	}
-	.article__text {
-		font-size: 1.125rem;
-	}
-	.hamburger {
-		display: none;
-	}
-	.header__navigation {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-		position: static;
-	}
-
-	.header__navigation--link {
-		margin: 0 8px;
-		font-size: 20px;
-		color: antiquewhite;
-		text-decoration: none;
-	}
-	.hero__heading {
-		font-size: 2.25rem;
-	}
-	.hero__text {
-		font-size: 1.125rem;
-	}
-	.page-header__heading {
-		font-size: 3rem;
-	}
-	.page-header__text {
-		font-size: 1.125rem;
-	}
-
-	.grid {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-	}
-	.my-articles__heading {
-		font-size: 2.25rem;
-	}
 }

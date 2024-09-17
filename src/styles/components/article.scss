@@ -1,0 +1,26 @@
+$textcolor: hotpink;
+$desktop: 1280px;
+$tablet: 768px;
+
+.article {
+	margin: 16px 8px;
+	&__heading {
+		font-size: 1.1rem;
+		color: rgb(52, 173, 161);
+		@media screen and (min-width: $tablet) {
+			font-size: 1.5rem;
+		}
+		@media screen and (min-width: $desktop) {
+			font-size: 2rem;
+		}
+
+	}
+	&__list {
+		list-style-type: circle;
+	}
+	&__text {
+		margin: 16px 0px;
+		font-size: 1rem;
+		line-height: 1.5;
+	}
+}
