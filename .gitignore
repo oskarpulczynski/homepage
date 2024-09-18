@@ -2,3 +2,4 @@ passwords
 node_modules
 .parcel-cache
 dist
+.vscode
