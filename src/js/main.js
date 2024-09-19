@@ -78,3 +78,5 @@ const wiek = resultDays/365;
 console.log(wiek)
 
 substract(1,2)
+
+console.log(button) 
