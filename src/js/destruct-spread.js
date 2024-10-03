@@ -1,38 +1,38 @@
-console.log("destrukturyzacja + spread operator");
+// console.log("destrukturyzacja + spread operator");
 
-const person = {
-	name: "Oskar",
-	age: 35,
-};
+// const person = {
+// 	name: "Oskar",
+// 	age: 35,
+// };
 
-// const { name, age } = person;
+// // const { name, age } = person;
 
-const fruits = ["apple", "orange", "strawberry"];
-const vegetables = ["japko", "pomidor", "burak"];
+// const fruits = ["apple", "orange", "strawberry"];
+// const vegetables = ["japko", "pomidor", "burak"];
 
-// const [firstFruit,, secondFruit] = fruits;
+// // const [firstFruit,, secondFruit] = fruits;
 
-// console.log(firstFruit)
-// console.log(secondFruit)
+// // console.log(firstFruit)
+// // console.log(secondFruit)
 
-const adress = {
-	city: "białystok",
-	country: "poland",
-};
+// const adress = {
+// 	city: "białystok",
+// 	country: "poland",
+// };
 
-const personWithAdress = {
-	// name: person.name,
-	// city: adress.city,
-	...adress,
-	...person,
-};
+// const personWithAdress = {
+// 	// name: person.name,
+// 	// city: adress.city,
+// 	...adress,
+// 	...person,
+// };
 
-console.log(personWithAdress);
+// console.log(personWithAdress);
 
-const fruitsandvegs = [...fruits, ...vegetables];
+// const fruitsandvegs = [...fruits, ...vegetables];
 
-console.log(fruitsandvegs);
+// console.log(fruitsandvegs);
 
-const newFruits = [...fruits];
+// const newFruits = [...fruits];
 
-console.log(newFruits);
+// console.log(newFruits);
